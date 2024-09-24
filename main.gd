@@ -1,7 +1,10 @@
 extends Node
 
-var grid_manager = load("res://scenes/manager/grid_manager.gd")
+@onready var grid_manager = $GridManager
 
+#var grid_manager_scene = preload("res://scenes/manager/GridManager.tscn")
+#var grid_manager = null
+ 
 var GRID_SIZE = 32
 
 var building_scene = preload("res://building.tscn")
@@ -14,8 +17,9 @@ var occupied_cells = {}
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	#grid_manager.test()
 	#print("Ready - TileMapLayer:", grid_manager._highlight_tile_map_layer)
-	#var grid_manager = load("res://scenes/manager/grid_manager.gd").new()
+	#grid_manager = load("res://scenes/manager/grid_manager.gd").new()
 	cursor.visible = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

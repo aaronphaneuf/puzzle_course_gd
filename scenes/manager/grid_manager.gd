@@ -5,9 +5,12 @@ var GRID_SIZE = 32
 @export var _highlight_tile_map_layer: TileMapLayer
 @export var _base_terrain_tilemap_layer: TileMapLayer
 
-
+func test():
+	print('Hello!')
+	
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	
 	print("Ready - TileMapLayer:", _highlight_tile_map_layer)
 	
 	
